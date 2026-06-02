@@ -44,3 +44,12 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .btn-primary:hover { background: var(--accent-2); }
 .btn-ghost { border: 1px solid var(--border); color: var(--text); }
 .btn-ghost:hover { border-color: var(--accent); }
+
+/* sections + cards */
+.section-title { font-size: clamp(26px, 4vw, 36px); margin-bottom: 32px; }
+.services, .work, .about, .contact { padding: 72px 0; border-top: 1px solid var(--border); }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 26px; transition: border-color .15s, transform .15s; }
+.card:hover { border-color: var(--accent); transform: translateY(-3px); }
+.card h3 { font-size: 19px; margin-bottom: 10px; }
+.card p { color: var(--muted); font-size: 15px; }
