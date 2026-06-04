@@ -53,3 +53,11 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .card:hover { border-color: var(--accent); transform: translateY(-3px); }
 .card h3 { font-size: 19px; margin-bottom: 10px; }
 .card p { color: var(--muted); font-size: 15px; }
+
+/* work */
+.work-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.work-item { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 24px; display: block; transition: border-color .15s, transform .15s; }
+.work-item:hover { border-color: var(--accent); transform: translateY(-3px); }
+.tag { display: inline-block; font-size: 12px; color: var(--accent); border: 1px solid var(--border); border-radius: 999px; padding: 3px 10px; margin-bottom: 14px; }
+.work-item h3 { font-size: 20px; margin-bottom: 8px; }
+.work-item p { color: var(--muted); font-size: 15px; }
