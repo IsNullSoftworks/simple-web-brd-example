@@ -76,3 +76,15 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 .contact .muted, .site-footer .muted { color: var(--muted); margin-top: 16px; font-size: 14px; }
 .site-footer { border-top: 1px solid var(--border); padding: 32px 0; }
 .site-footer .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+/* interactions */
+.reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+
+@media (max-width: 760px) {
+  .nav-toggle { display: block; }
+  .nav-links { position: absolute; top: 100%; right: 4%; flex-direction: column; gap: 14px;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 22px; display: none; }
+  .nav-links.open { display: flex; }
+  .cards, .work-grid, .split { grid-template-columns: 1fr; }
+}
