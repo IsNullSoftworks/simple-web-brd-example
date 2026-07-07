@@ -21,10 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
     li.appendChild(who);
     li.appendChild(body);
 
-    let postedAt;
     const when = document.createElement("time");
     when.className = "forum-time";
-    when.textContent = new Date(postedAt).toLocaleTimeString();
+    when.textContent = new Date().toLocaleTimeString();
     li.appendChild(when);
     list.appendChild(li);
 
