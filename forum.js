@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!postBtn || !nameEl || !msgEl || !list) return;
 
   postBtn.addEventListener("click", () => {
-    const name = nameEl.value.trim() || "Anonymous";
+    const name = "Anonymous";
     const message = msgEl.value.trim();
     if (!message) return;
 
