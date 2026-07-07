@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>isnull — community forum</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a class="brand" href="index.html">is<span>null</span></a>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+        <ul class="nav-links">
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#work">Work</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="forum.html">Forum</a></li>
+          <li><a class="nav-cta" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Community</p>
+        <h1>Forum</h1>
+        <p class="lede">Questions, ideas, and show-and-tell from the isnull community.
+          Post a message below &mdash; be kind, be curious.</p>
+      </div>
+    </section>
+
+    <section class="forum" id="forum">
+      <div class="container">
+        <h2 class="section-title">Thread</h2>
+        <ul id="forum-posts" class="forum-posts">
+          <li class="forum-post"><strong>isnull team</strong><span class="forum-msg">Welcome to the forum — say hello!</span></li>
+        </ul>
+
+        <h2 class="section-title">Post a message</h2>
+        <form class="forum-form" id="forum-form">
+          <label for="forum-name">Name</label>
+          <input type="text" id="forum-name" name="name" placeholder="Your name" />
+          <label for="forum-message">Message</label>
+          <textarea id="forum-message" name="message" rows="4" placeholder="What's on your mind?"></textarea>
+          <button type="button" id="forum-post" class="btn btn-primary">Post message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <script src="forum.js"></script>
+  <style>
+    .forum-posts { list-style: none; padding: 0; margin: 0 0 32px; }
+    .forum-post { padding: 12px 16px; border: 1px solid #e2e8f0; border-radius: 10px; margin-bottom: 10px; background: #fff; }
+    .forum-post strong { display: block; margin-bottom: 2px; }
+    .forum-form { display: flex; flex-direction: column; gap: 8px; max-width: 480px; }
+    .forum-form input, .forum-form textarea { font: inherit; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; }
+    .forum-form button { margin-top: 6px; align-self: flex-start; }
+  </style>
+</body>
+</html>
