@@ -90,3 +90,7 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; }
 }
 
 .forum-time { margin-left: 8px; color: #888; font-size: 0.85em; }
+
+.forum-count { font-size: 0.6em; color: #888; font-weight: normal; margin-left: 8px; }
+
+.forum-count { font-size: 0.6em; color: #888; font-weight: normal; margin-left: 8px; }

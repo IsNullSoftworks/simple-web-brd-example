@@ -4,6 +4,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const nameEl = document.getElementById("forum-name");
   const msgEl = document.getElementById("forum-message");
   const list = document.getElementById("forum-posts");
+  const countEl = document.getElementById("forum-count");
+  const refreshCount = () => {
+    if (!countEl) return;
+    const n = list.children.length;
+    countEl.textContent = n + (n === 1 ? " post" : " posts");
+  };
+  refreshCount();
   if (!postBtn || !nameEl || !msgEl || !list) return;
 
   postBtn.addEventListener("click", () => {
@@ -25,7 +32,11 @@ document.addEventListener("DOMContentLoaded", () => {
     when.className = "forum-time";
     when.textContent = new Date().toLocaleTimeString();
     li.appendChild(when);
+    refreshCount();
     list.appendChild(li);
+
+    nameEl.value = "";
+    msgEl.value = "";
 
   });
 });
