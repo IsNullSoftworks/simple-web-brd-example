@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     who.textContent = name;
     const body = document.createElement("span");
     body.className = "forum-msg";
-    body.textContent = msgEl.textContent;
+    body.textContent = message;
     li.appendChild(who);
     li.appendChild(body);
     list.appendChild(li);
