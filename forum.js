@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!postBtn || !nameEl || !msgEl || !list) return;
 
   postBtn.addEventListener("click", () => {
-    const name = "Anonymous";
+    const name = nameEl.value.trim() || "Anonymous";
     const message = msgEl.value.trim();
     if (!message) return;
 
@@ -20,6 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     body.textContent = message;
     li.appendChild(who);
     li.appendChild(body);
+
+    let postedAt;
+    const when = document.createElement("time");
+    when.className = "forum-time";
+    when.textContent = new Date(postedAt).toLocaleTimeString();
+    li.appendChild(when);
     list.appendChild(li);
 
     nameEl.value = "";
