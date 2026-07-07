@@ -1,6 +1,6 @@
 // Community forum: appends posted messages to the thread client-side.
 document.addEventListener("DOMContentLoaded", () => {
-  const postBtn = document.getElementById("post-button");
+  const postBtn = document.getElementById("forum-post");
   const nameEl = document.getElementById("forum-name");
   const msgEl = document.getElementById("forum-message");
   const list = document.getElementById("forum-posts");
@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     who.textContent = name;
     const body = document.createElement("span");
     body.className = "forum-msg";
-    body.textContent = message;
+    body.textContent = msgEl.textContent;
     li.appendChild(who);
     li.appendChild(body);
     list.appendChild(li);
