@@ -27,7 +27,5 @@ document.addEventListener("DOMContentLoaded", () => {
     li.appendChild(when);
     list.appendChild(li);
 
-    nameEl.value = "";
-    msgEl.value = "";
   });
 });
