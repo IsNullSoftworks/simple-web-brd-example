@@ -32,8 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
     when.className = "forum-time";
     when.textContent = new Date().toLocaleTimeString();
     li.appendChild(when);
-    refreshCount();
     list.appendChild(li);
+    refreshCount();
 
     nameEl.value = "";
     msgEl.value = "";
